@@ -13,17 +13,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
         rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
 
-
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 
+    <!-- Intro section -->
+
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">Welcome</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">To My</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">Portfolio.</span>
+            </h1>
+        </div>
+    </div>
+    <div class="slider"></div>
+
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top p-3">
         <div class="container-fluid">
-            <a href="BootStrap.html" class="navbar-brand">ZAID's CV</a>
+            <a href="/" class="navbar-brand">My Portfolio</a>
 
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -31,49 +51,47 @@
             <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavId">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link active" href="#">Home </a>
+                        <a class="nav-link active" href="/">Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Technical</a>
+                        <a class="nav-link" href="/experience.html">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Education</a>
+                        <a class="nav-link" href="/technical.html">Technical Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Achievement</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        <a class="nav-link" href="/acheivment.html">Achievement</a>
                     </li>
                 </ul>
 
-                <a href="/Resume.pdf" download class="btn btn-light">Download CV</a>
-                
+                <a href="media/Resume.pdf" id="downloadResume" download class="btn btn-light" style="margin-left: 20px;">Download CV</a>
+
 
             </div>
         </div>
     </nav>
 
+    <!-- landing page section -->
 
-
-    <section>
+    <div class="container container-fluid">
         <div class="landing-page">
             <div class="row">
                 <div class="col-sm-12 col-md-6 text-center">
-                    <img class="aboutImage" src="me.png" alt="">
+                    <img class="aboutImage" src="media/images/me.png" alt="">
                 </div>
                 <div class="col-sm-12 col-md-6 center">
-
                     <h1 class="title">Hi</h1>
                     <h2 class="subtitle">I'm Sayed Zaid</h2>
                     <h5>Full Stack Developer</h5>
-                    <a href="/Resume.pdf" download class="btn btn-dark">Download CV</a>
+                    <a href="media/Resume.pdf" download class="btn btn-dark">Download CV</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="badgeSkills py-5">
+    <!-- personal skills section -->
+
+    <section class="badgeSkills py-5" style="background-color: #f2f2f2;" >
         <div class="col-12 text-center mt-5">
             <h1 class="text-dark">Technical Skills</h1>
             <div class="border-top border-primary w-25 mx-auto my-3"></div>
@@ -109,41 +127,66 @@
                 </div>
             </div>
         </div>
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-12 text-center mt-4">
+                    <a href="html/technical.html" class="btn btn-dark">More Skills</a>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- qualification section -->
 
     <section class="qualification py-5">
-        <div class="col-12 text-center mt-5">
+        <div class="col-12 text-center mt-3" >
             <h1 class="text-dark">Education Qualification</h1>
             <div class="border-top border-primary w-25 mx-auto my-3"></div>
         </div>
-        <!-- Three Column Section -->
 
         <div class="container">
             <div class="row my-5">
-                <div class="col-md-4 my-4">
-                    <img src="/iisjed.png" alt="">
-                    <h4>S.S.C</h4>
-                    <p>I have completed my Senior Secondary Education from International Indian School, Jeddah with a
-                        percentage of 86 in the year 2016.
-                    </p>
+                <div class="col-md-4 my-4 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <div >
+                                <img src="media/images/iisjed.png" alt="">
+                            </div>
+                            <h5 class="card-title">International Indian School</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Jeddah, Saudi Arabia</h6>
+                            <p class="card-text">I have completed my Senior Secondary Education from International Indian School, Jeddah with a
+                                percentage of 86 in the year 2016.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-md-4 my-4">
-                    <img src="/shriniwas.png" alt="">
-                    <h4>H.S.C</h4>
-                    <p>I have completed my Higher Secondary Education from Shrinivas Bagarka College, Andheri, Mumbai
-                        with a percentage of 67 in the year 2018.
-
-                    </p>
+                <div class="col-md-4 my-4 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <div >
+                                <img src="media/images/shriniwas.png" alt="">
+                            </div>
+                            <h5 class="card-title">Shrinivas Bagarka College</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Andheri, Mumbai</h6>
+                            <p class="card-text">I have completed my Higher Secondary Education from Shrinivas Bagarka College, Andheri, Mumbai
+                                with a percentage of 67 in the year 2018.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-md-4 my-4">
-                    <img src="/ramsheth.png" alt="">
-                    <h4>B.Sc (Information Technology)</h4>
-                    <p>I have completed my Secondary Education from Ramsheth Thakur Collage of Commerce and Science,
-                        Navi Mumbai with a CGPA of 9.2 in the year 2021.</p>
-
+                <div class="col-md-4 my-4 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <div >
+                                <img src="media/images/ramsheth.png" alt="">
+                            </div>
+                            <h5 class="card-title">Ramsheth Thakur College of Com & Sci</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Kharghar, Navi Mumbai</h6>
+                            <p class="card-text">I have completed my Secondary Education from Ramsheth Thakur College of Commerce and Science,
+                                Navi Mumbai with a CGPA of 8.6 in the year 2021.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,70 +195,57 @@
 
     </section>
 
+    <!-- Achievement testimonial -->
 
-    <!-- acheivments section -->
-
-    <section id="testim" class="testim py-5">
-        <div class="col-12 text-center">
-            <h1 class="text-light">Personal Acheivments</h1>
+    <div style="background-color: #f2f2f2;">
+        <div class="col-12 text-center pt-5" >
+            <h1 class="text-dark">Personal Achievement</h1>
             <div class="border-top border-primary w-25 mx-auto my-3"></div>
         </div>
-        <div class="wrap">
-            <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-            <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-            <ul id="testim-dots" class="dots">
-                <li class="dot active"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <!-- <li class="dot"></li> -->
-            </ul>
-            <div id="testim-content" class="cont">
-                <div class="active">
-                    <h2> E-commerce application</h2>
-                    <p>I developed a fully functional E-commerce Android Application as my final year project with
-                        google firebase as backend and integrated Razorpay payment gateway to it. </p>
-                </div>
-                <div>
-                    <h2>I-Senso Robotics – IIT Bombay</h2>
-                    <p>Participated in a One day national level workshop on I-Senso Robotics which was organised by IIT
-                        Bombay</p>
-                </div>
-                <div>
-                    <h2>Shaping the Future with Nanoscience and Technology</h2>
-                    <p>Attended national seminar on “Shaping the Future with Nanoscience and Technology” on Jan 8, 2020
-                    </p>
-                </div>
 
-                <div>
-                    <h2>Drag and Drop</h2>
-                    <p>Designed a website for a Limousine Company in US using wix.</p>
-                </div>
-
-                <div>
-                    <h2>Amazon Web Services (AWS)</h2>
-                    <p>Attended international seminar on “Amazon Web Services (AWS)”.</p>
-                </div>
-
-                <!-- <div>
-                    <h2>Amazon Web Services (AWS)</h2>
-                    <p>Attended international seminar on “Amazon Web Services (AWS)”.</p>
-                </div> -->
-
+        <div class="slideshow-container">
+    
+            <div class="mySlides">
+                <h2 class="mb-4"> E-commerce application</h2>
+                <p>I developed a fully functional E-commerce Android Application as my final year project with
+                    google firebase as backend and integrated Razorpay payment gateway to it. </p>
             </div>
-
+            <div class="mySlides">
+                <h2 class="mb-4">I-Senso Robotics - IIT Bombay</h2>
+                <p>Attended national seminar on “Shaping the Future with Nanoscience and Technology” on Jan 8, 2020</p>
+            </div>
+            <div class="mySlides">
+                <h2 class="mb-4"> Shaping the Future with Nanoscience and Technology</h2>
+                <p>Attended national seminar on “Shaping the Future with Nanoscience and Technology” on Jan 8, 2020</p>
+            </div>
+            <div class="mySlides">
+                <h2 class="mb-4">Amazon Web Services (AWS)</h2>
+                <p>Attended international seminar on “Amazon Web Services (AWS)”.</p>
+            </div>
+    
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    </section>
+    
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
 
+    <!-- career section -->
 
-    <section class="career py-5">
-        <div class="col-12 text-center mt-5">
+    <section class="career py-5" style="height: 50vh;">
+        <div class="col-12 text-center">
             <h1 class="text-dark">Work Experience</h1>
             <div class="border-top border-primary w-25 mx-auto my-3"></div>
         </div>
         <div class="container text-center mt-5">
-            <h3>WORKING WITH HYPLAP IT SOLUTIONS PVT. LTD. SINCE</h3>
+            <h3>WORKING WITH HYPLAP IT SOLUTIONS PVT. LTD. AS A FULL STACK DEVELOPER FOR</h3>
         </div>
         <div class="countup" id="countup1">
             <span class="timeel years">00</span>
@@ -233,27 +263,29 @@
         </div>
     </section>
 
-    <div class="jumbotron py-5 mb-0">
-        <container>
+    <!-- jumbotron section -->
+
+    <div class="container container-fluid">
+        <div class="jumbotron py-5 mb-0">
             <div class="row text-center">
                 <div class="col-sm-6 my-auto">
                     <h4>Would you still like to <strong>HIRE ME</strong>?</h4>
                 </div>
                 <div class="col-sm-6 my-auto">
-                <a href= "tel:+918433885667" class="btn btn-primary">CONTACT ME TODAY</a>
+                    <a href="tel:+918433885667" class="btn btn-primary">CONTACT ME TODAY</a>
+                </div>
             </div>
-            </div>
-        </container>
+        </div>
     </div>
-
 
     <!-- Start Footer -->
 
     <footer>
-        <div class="container mt-5">
+        <div class="container">
             <div class="row tex-light text-center py-4 justify-content-center">
                 <div class="col-sm-10 col-md-8 col-lg-6">
-                    <p class="text-light">I hereby declare that all the information contained in this resume is in accordance with facts or truths to 
+                    <p class="text-light">I hereby declare that all the information contained in this resume is in
+                        accordance with facts or truths to
                         my knowledge. I take full responsibility for the correctness of the said information..</p>
                     <ul class="social pt-3">
                         <li><a href="#"><i><span class="fab fa-facebook"></span></i></a></li>
@@ -292,14 +324,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
+
+    
 
     <script>
         // counter js
 
         window.onload = function () {
             // Month Day, Year Hour:Minute:Second, id-of-element-container
-            countUpFromTime("March 21, 2022 10:00:00", "countup1"); // ****** Change this line!
+            countUpFromTime("March 21, 2022 10:00:00", "countup1"); 
         };
         function countUpFromTime(countFrom, id) {
             countFrom = new Date(countFrom).getTime();
@@ -343,6 +377,8 @@
             }, 1000);
         }
     </script>
+
+    
 </body>
 
 </html>

@@ -1,0 +1,104 @@
+* {
+    cursor: crosshair;
+    margin: 0%;
+    padding: 0%;
+}
+
+div {
+
+    animation: transitionIn 0.5s;
+}
+
+@keyframes transitionIn {
+    from {
+
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    /* border-radius: 10px; */
+    background-color: gainsboro;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: gainsboro;
+}
+
+::-webkit-scrollbar-thumb {
+    /* border-radius: 10px; */
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+    background-color: #212529;
+}
+/*============= NAVIGATION =============*/
+
+.navbar {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.5);
+
+}
+
+.navbar img {
+    height: 4rem;
+}
+
+.nav-link {
+    color: gainsboro !important;
+    border: 2px solid #212529;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: red !important;
+    border: 2px solid #717171;
+
+
+}
+/*============= FOOTER =============*/
+
+footer {
+    background-color: #383838;
+
+}
+
+footer img {
+    padding-bottom: 1rem;
+    margin: auto;
+}
+
+footer p,
+footer a,
+.socket a {
+    color: white;
+    text-decoration: none;
+}
+
+ul.social {
+    list-style: none;
+    display: flex;
+    max-width: 16rem;
+    margin: 0 auto;
+    padding: 0%;
+}
+
+ul.social li {
+    margin: auto;
+}
+
+/*============= SOCKET =============*/
+
+.socket {
+    background-color: #212529;
+    border-top: .1rem solid;
+}
